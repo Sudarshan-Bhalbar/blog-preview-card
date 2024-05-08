@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Figtree;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.main-div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-div .box {
+  display: flex;
+  width: 384px;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid var(--Black, #111);
+  background: var(--Pure-White, #fff);
+  box-shadow: 8px 8px 0px 0px #000;
+}
+.box:hover {
+  box-shadow: 16px 16px 0px 0px #000;
+}
+.main-div .box .img-div {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 10px;
+  background: var(--Yellow, #f4d04e);
+  background-image: url(./assets/images/illustration-article.svg);
+}
+.content-div {
+  display: flex;
+  padding: 4px 12px;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 4px;
+}
+.btn {
+  display: flex;
+  padding: 4px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  background: var(--Yellow, #f4d04e);
+}
+h5 {
+  color: var(--Black, #111);
+
+  /* Body S (Regular) */
+  font-family: Figtree;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+}
+h2 {
+  align-self: stretch;
+  color: var(--Black, #111);
+
+  /* Heading */
+  font-family: Figtree;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%; /* 36px */
+}
+h2:hover {
+  color: var(--Yellow, #f4d04e);
+}
+p {
+  align-self: stretch;
+  color: var(--Grey, #7f7f7f);
+
+  /* Body M */
+  font-family: Figtree;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+}
+.avatar-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+  background-image: url(./assets//images/image-avatar.webp);
+}
+.avatar-box p {
+  color: var(--Black, #111);
+
+  /* Body S (Bold) */
+  font-family: Figtree;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%; /* 21px */
+}
+@media only screen and (min-width: 480px) {
+  .box{
+    width: 327px;
+    flex-shrink: none;
+  }
+}
